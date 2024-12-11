@@ -1,0 +1,11 @@
+{
+	"requestId": "{{ appsmith.store.UUID}}",
+	"workflowType": "{{ "firewallcheck" }}",
+	"targetEnvironment": "{{envLabel.selectedOptionValue }}",
+	"requestData": "{{ 
+	JSON.stringify({
+		sourceIp: srcIp.text,
+		destinationIp: destIp.text
+	}) 
+	}}"
+}
